@@ -6,12 +6,12 @@ curLines = {}
 chars = ['#', '*', '&', '$', '%', '@']
 
 for i in range(90000):
-  for j in rnage(lineWidth):
+  for j in range(lineWidth):
     a = False
     if j in curLines:
-      print(chars[random.randint(0, len(chars-1), end = "")
+      print(chars[random.randint(0, len(chars)-1)], end = "")
       a = True
-      curLines[] -=1
+      curLines[j] -=1
       
       if curLines[j] == 0:
         del curLines[j]
